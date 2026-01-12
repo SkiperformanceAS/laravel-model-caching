@@ -16,6 +16,21 @@ We thank the following sponsors for their generosity, please take a moment to ch
 
 - [LIX](https://lix-it.com)
 
+## Fork
+
+We are maintaining a fork of the original package [genealabs/laravel-model-caching](https://github.com/mikebronner/laravel-model-caching)
+to provide fixes we needed for our projects and to remove Laravel Nova package dev dependency which wasn't allowing
+us to run tests.
+
+To run the tests, you can use the following commands:
+
+```bash
+cp .env.example .env
+docker composer up -d
+docker composer run --rm -it laravel.test composer install
+docker composer run --rm -it laravel.test ./vendor/bin/phpunit
+```
+
 ## Impetus
 I created this package in response to a client project that had complex, nested
 forms with many `<select>`'s that resulted in over 700 database queries on one
