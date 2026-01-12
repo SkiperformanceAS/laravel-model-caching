@@ -1,5 +1,5 @@
 {
-    "name": "mikebronner/laravel-model-caching",
+    "name": "skiperformance/laravel-model-caching",
     "description": "Automatic caching for Eloquent models.",
     "license": "MIT",
     "authors": [
